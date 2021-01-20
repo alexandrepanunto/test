@@ -1,0 +1,17 @@
+{
+	"name": "dvhod001",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=dvhod001;initial catalog=iq_stg",
+			"userName": "ca\\alexandre.panunto",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2YmJhYzYyOC1iZGQ0LTRhNTYtYmExNy03NGQwMWM4YmUxOTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "dvhod001",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
