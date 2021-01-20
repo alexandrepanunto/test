@@ -1,0 +1,12 @@
+{
+	"name": "dvhod001",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dvhod001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
