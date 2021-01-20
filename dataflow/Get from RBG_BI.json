@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "Get from RBG_BI",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
@@ -10,11 +10,18 @@
 						"type": "DatasetReference"
 					},
 					"name": "GetRBGBi"
+				},
+				{
+					"name": "source1"
 				}
 			],
 			"sinks": [],
-			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tquery: '',\n\tformat: 'query') ~> GetRBGBi"
+			"transformations": [
+				{
+					"name": "Filter1"
+				}
+			],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> GetRBGBi\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1\nGetRBGBi filter(ERROR_FUNCTION('')) ~> Filter1"
 		}
 	}
 }
