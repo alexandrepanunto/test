@@ -1,0 +1,16 @@
+{
+	"name": "rbgbi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "rbgbi",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "ADH",
+			"table": "AdherenceRx"
+		}
+	}
+}
