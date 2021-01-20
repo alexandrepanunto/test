@@ -48,7 +48,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "dvhod001",
+						"referenceName": "dvhod001_Dest",
 						"type": "DatasetReference"
 					}
 				]
