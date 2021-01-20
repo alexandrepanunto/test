@@ -1,0 +1,16 @@
+{
+	"name": "dvhod001_Dest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dvhod001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "audit",
+			"table": "DataCaptureConfig_SR_Alex"
+		}
+	}
+}
