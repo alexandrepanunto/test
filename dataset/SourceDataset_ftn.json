@@ -1,0 +1,107 @@
+{
+	"name": "SourceDataset_ftn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dvhod001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "DataCaptureConfigID",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "CaptureName",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastCaptureDt",
+				"type": "datetime2",
+				"precision": 27,
+				"scale": 7
+			},
+			{
+				"name": "NbTimeDelta",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "NbTimeDeltaInd",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SsisDTFormatCd",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "RejectFailedInd",
+				"type": "bit",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "DateWithHrsInd",
+				"type": "bit",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "CreatedDate",
+				"type": "datetime2",
+				"precision": 27,
+				"scale": 7
+			},
+			{
+				"name": "UpdateDate",
+				"type": "datetime2",
+				"precision": 27,
+				"scale": 7
+			},
+			{
+				"name": "CreatedBy",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UpdatedBy",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AppName",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CreatePkgGuid",
+				"type": "uniqueidentifier",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UpdatePkgGuid",
+				"type": "uniqueidentifier",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "audit",
+			"table": "DataCaptureConfig_SR"
+		}
+	}
+}
