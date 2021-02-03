@@ -1,0 +1,27 @@
+{
+	"name": "integrationRuntime1",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Canada Central",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"edition": "Enterprise",
+				"licenseType": "BasePrice",
+				"packageStores": [
+					{
+						"name": "aaaaaaaa",
+						"packageStoreLinkedService": {
+							"referenceName": "TEST_DAI_SSIS_Package",
+							"type": "LinkedServiceReference"
+						}
+					}
+				]
+			}
+		}
+	}
+}
